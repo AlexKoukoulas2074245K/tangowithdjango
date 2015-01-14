@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+	
+	<head>
+		<title>About Rango</title>
+		<!-- CSS / JavaScript inclusion -->
+		<link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- CSS -->
+		<script src="{% static "js/jquery.js" %}"></script> <!-- JavaScript -->	
+	</head>
+
+	<body>
+		<h1 style="background:#bbb; border-radius: 10px; padding: 10px">
+		This is Rango's About page
+		</h1>
+		<ul style="background:#999; border-radius: 10px;">
+			<li>Rango wants mushrooms</li>
+			<li>Rango wants eggs</li>
+			<li>Rango wants lizzards</li>
+		</ul>
+		<a href="/rango/" style="background:#666; border-radius: 10px; padding: 10px; color:#ddd">Back to top</a>
+		<br>
+		<img src="{% static "images/rangoAbout.jpg" %}" alt = "Rango's about picture"
+
+	</body>
+</html>
