@@ -53,6 +53,18 @@ def populate():
              url = 'http://flask.pocoo.org',
              views = 123);
 
+    student_cat = add_cat("Alexios Koukoulas", 24, 10);
+
+    add_page(cat=student_cat,
+             title="Github Page",
+             url="https://github.com/AlexKoukoulas2074245K",
+             views = 2410);
+
+    add_page(cat=student_cat,
+             title="Python Anywhere page",
+             url="https://www.pythonanywhere.com/user/AlexKoukoulas2074245K/consoles/",
+             views = 24);
+    
     #Print out what we have added to the user
     for c in Category.objects.all():
         for p in Page.objects.filter(category=c):
