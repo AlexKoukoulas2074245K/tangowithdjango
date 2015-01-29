@@ -8,7 +8,9 @@
         <h1>Rango says..hello world!</h1>
 
         {% if categories %}
-            <ul>
+            <h2>Categories</h2>
+			
+			<ul>
                 {% for category in categories %}
                 <!-- Following line changed to add an HTML hyperlink -->
                 <li><a href="/rango/category/{{ category.slug }}">{{ category.name }}</a></li>
@@ -19,6 +21,7 @@
        {% endif %}
 
        {% if pages %}
+			<h2>Pages</h2>
        		<ul>
        			{% for page in pages %}
        			<li><a href="{{ page.url }}">{{ page.title }}</a></li>

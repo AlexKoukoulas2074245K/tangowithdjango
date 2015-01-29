@@ -21,11 +21,13 @@
 					{{ field.help_text }}
 					{{ field }}
 				{% endfor %}
+				
+				<input type="submit" name="submit" value="Create Page" />
+				
 			{% else %}
-				A page by this name does not exist
+				A category by this name does not exist
 			{% endif %}
 
-			<input type="submit" name="submit" value="Create Page" />
 		</form>
 	</body>
 </html>
