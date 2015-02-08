@@ -36,6 +36,7 @@ TEMPLATE_DIRS = [
 ]
 
 LOGIN_URL = '/rango/login'
+
 # Application definition
 
 INSTALLED_APPS = (
