@@ -37,8 +37,11 @@ TEMPLATE_DIRS = [
     TEMPLATE_PATH,
 ]
 
-LOGIN_URL = '/rango/login'
-
+REGISTRATION_OPEN = True         # if True, users can register
+ACCOUNT_ACTIVATION_DAYS = 7      # One-week activation window;
+REGISTRATION_AUTO_LOGIN = True   # If True, the user will be automatically logged in.
+LOGIN_REDIRECT_URL = '/rango/'   # The page you want users to arrive at after they successfully logged in
+LOGIN_URL = '/accounts/login/'    # The page users are directed to if they are not logged in and they are trying to access pages requiring authentication
 # Application definition
 
 INSTALLED_APPS = (
@@ -49,6 +52,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rango',
+    'registration',
 )
 
 MIDDLEWARE_CLASSES = (
