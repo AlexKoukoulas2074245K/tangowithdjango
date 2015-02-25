@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html>
-	
-	<head>
-		<title>About Rango</title>
-		<!-- CSS / JavaScript inclusion -->
-		<link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- CSS -->
-		<script src="{% static "js/jquery.js" %}"></script> <!-- JavaScript -->	
-	</head>
+{% block title %}About{% endblock %}
 
-	<body>
-		<h1 style="background:#bbb; border-radius: 10px; padding: 10px">
-		This is Rango's About page
-		</h1>
-		<ul style="background:#999; border-radius: 10px;">
-			<li>Rango wants mushrooms</li>
-			<li>Rango wants eggs</li>
-			<li>Rango wants lizzards</li>
-		</ul>
-		<h2> You have visited this site: {{ visits }} times!</h2>
-		<a href="/rango/" style="background:#666; border-radius: 10px; padding: 10px; color:#ddd">Back to top</a>
-		<br>
-		<img src="{% static "images/rangoAbout.jpg" %}" alt = "Rango's about picture">
-		<br>
-		<footer style="background:#555; border-radius: 10px; padding: 10px; color:#ddd">
-			This tutorial has been put together by <strong>Alexios Koukoulas</strong>, 2074245k
-		</footer>
-	</body>
-</html>
+{% block body_block %}
+	
+	<div class="page-header">
+		<h1>About</h1>
+	</div>
+	
+	<div>
+		<h1>This is Rango's About page</h1>
+		<h2>You have visited the site: {{ visits }} times</h2>
+		<img src="{% static "images/rangoAbout.jpg" %}" alt="Rango's about picture">
+		<footer> This tutorial has been put together by <strong>Alexios Koukoulas</strong>, 2074245k</footer>
+	</div>
+	
+{% endblock %}
