@@ -24,11 +24,11 @@ TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = '_a7seymt(=(x^^rphic-q*&vg6c-*z7kksi+z@xy^6^g*r!eqs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alexkoukoulas2074245k.pythonanywhere.com']
 
 TEMPLATE_DIRS = [
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
